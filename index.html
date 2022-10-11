@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio HTML</title>
+</head>
+<body>
+    <h1 id="top">HTML Básico</h1>
+
+    <h2>Sumário</h2>
+    <ul>
+        <li><a href="#o-q-e">Então, o que é HTML?</a></li>
+        <li><a href="#estrutura-basica">Estrutura Básica</a></li>
+        <li><a href="#tags-importantes">Outras Tags importantes para formatação do Texto</a></li>
+        <li><a href="#tags-combinadas">As Tags também podem ser combinadas</a></li>
+        <li><a href="#atributos">Atributos das Tag</a></li>
+        <li><a href="#atributo-especifico">Atributos específicos das Tag</a></li>
+    </ul>
+
+    <p>HTML (Hypertext Markup Language, ou em português Linguagem de Marcação de Hipertexto) é o código usado para construir páginas na web e seus conteúdos. Por exemplo, o conteúdo pode ser estruturado em parágrafos, listas, marcadores ou usando imagens e tabelas.</p>
+
+    <h2 id="o-q-e">Então, o que é HTML?</h2>
+    <p>Diferente do que muitos acreditam, o HTML não é uma linguagem de programação; ela é uma linguagem de marcação que define a estrutura do conteúdo. O HTML consiste em uma série de elementos que você pode usar para separar ou agrupar diferentes partes do conteúdo para que ele apareça ou funcione de uma determinada maneira. Tags adicionais podem transformar texto ou imagens em hiperlinks, colocar texto em itálico, aumentar ou diminuir as fontes e muito mais.</p>
+
+    <small><a href="#top">Voltar</a></small>
+
+    <h2 id="estrutura-basica">Estrutura Básica</h2>
+    <p>Uma página HTML básica vai sempre conter três tags básicas. Mas primeiro o que são tags? Tag é o nome de um elemento envolvido por sinais de maior e menor, exemplo <code><span><</span>html<span>></span></code> sinalizando ao navegador como um determinado trecho da página deve ser interpretada, e por isso na maioria, mas não em todas as tags será necessário uma tag de fechamento, que nada mais é do que a mesma tag de abertura com a adição de uma barra <code>(/)</code>, ou seja, para fechar a tag <code><span><</span>html<span>></span></code> devemos seguir da seguinte forma , exemplo <code><span><</span>html<span>></span></code>.</p>
+    <p>A seguir, já dentro das tags <code><span><</span>html<span>></span></code> teremos mais duas tags principais. A tag <code><span><</span>head<span>></span></code> que é um cabeçalho e a tag <code><span><</span>body<span>></span></code> que é o corpo da página, e é aqui que deve ficar o elementos que serão exibido na tela para o usuário.</p>
+    <p>A tag <code><span><</span>head<span>></span></code> interpretada pelo não navegador antes da tag <code><span><</span>body<span>></span></code>. Uma tag que usada dentro da tag <code><span><</span>head<span>></span></code> e  a tag <code><span><</span>title<span>></span></code> que serve para definir o título da página. Veja o exemplo abaixo:</p>
+
+<pre>
+<code>
+<span><</span>html>
+    <span><</span>head>
+        <span><</span>title>Título da Página<span><</span>/title>    
+    <span><</span>/head>
+    
+    <span><</span>body>
+        Conteúdo da Página.
+    <span><</span>/body>                
+<span><</span>/html>
+</code>
+</pre>
+
+<small><a href="#top">Voltar</a></small>
+
+    <h2 id="tags-importantes">Outras Tags importantes para formatação do Texto</h2>
+    <!-- tag <i> -->
+    <p><strong>A tag <code><span><</span>i></code></strong> transforma o que estiver dentro dela em <i>itálico</i>, que são <i>as letras levemente inclinadas para frente</i>. Exemplo: </p>
+    <ul>
+        <li>
+            <code><span><</span>i>Tags importantes para formatação do Texto<span><</span>/i></code>
+        </li>
+    </ul>
+
+    Resultado da tag <code><span><</span>i></code>
+
+    <ul>
+        <li>
+            <i>Tags importantes para formatação do Texto</i>
+        </li>
+    </ul>
+
+    <!-- tag strong -->
+    <p><strong>A tag <code><span><</span>strong></code></strong> transforma o que estiver dentro dela em <strong>Negrito</strong>, que são <strong>letras levemente mais grossas e mais escuras</strong>. Exemplo: </p>
+    <ul>
+        <li>
+            <code><span><</span>strong>Tags importantes para formatação do Texto<span><</span>/strong></code>
+        </li>
+    </ul>
+
+    Resultado da tag <code><span><</span>strong></code>
+
+    <ul>
+        <li>
+            <strong>Tags importantes para formatação do Texto</strong>
+        </li>
+    </ul>    
+
+    <small><a href="#top">Voltar</a></small>
+
+    <h2 id="tags-combinadas">As Tags também podem ser combinadas</h2>
+    <!-- tag <i> -->
+    <p>Caso eu queira que um determinado texto fique <strong><i>itálico e negrito ao mesmo tempo</i></strong> posso usar as tags da seguinte forma:</p>
+    <ul>
+        <li>
+            <code><span><</span>strong><span><</span>i>Tags importantes para formatação do Texto<span><</span>/i><span><</span>/strong></code>
+        </li>
+    </ul>
+
+    Resultado da tag <code><span><</span>strong><span><</span>i></code>
+
+    <ul>
+        <li>
+            <strong><i>Tags importantes para formatação do Texto</i></strong>
+        </li>
+    </ul>  
+    
+    <small><a href="#top">Voltar</a></small>
+
+    <!-- Atributos -->
+    <h2 id="atributos">Atributos das Tag</h2>
+    <p>O atributos nada mais são, que propriedades que uma tag pode ter. Algumas são mais genéricas, que se aplicam a maioria das tags, já outras são mais específicas de uma determinada tag. Vejamos alguns atributos mais genéricos.</p>
+
+    <p>Em praticamente todas as tags podemos atribuir as propriedades Em praticamente todas as tags podemos atribuir as propriedades <q>style</q>, <q>class</q> e <q>id</q>. Onde <q>style</q> é uma propriedade de estilização capaz de mudar por exemplo a cor de um texto, porém ela só altera na tag em que ela estiver inserida. Outras duas foram de aplicar estilo em mais elementos ao mesmo tem são os atributos <q>class</q> e o <q>id</q> onde definimos instruções de estilo, e ao aplicar o atributo <q>class</q> e/ou <q>id</q> na tag, o navegador irá interpretar as instruções de estilização definidos nos atributos., <q>class</q> e <q>id</q>. Onde <q>style</q> é uma propriedade de estilização capaz de mudar por exemplo a cor de um texto, porém ela só altera na tag em que ela estiver inserida. Outras duas foram de aplicar estilo em mais elementos ao mesmo tem são os atributos <q>class</q> e o <q>id</q> onde definimos instruções de estilo, e ao aplicar o atributo <q>class</q> e/ou <q>id</q> na tag, o navegador irá interpretar as instruções de estilização definidos nos atributos.</p>
+
+    <blockquote><i>Para saber mais sobre estilização, veja sobre CSS3!</i></blockquote>
+
+    <p>No exemplo abaixo a tag <code><span><</span>p></code> responsável por parágrafos recebe o atributo <q>style</q> com a instrução para mudar a cor do texto para azul.</p>
+
+    <ul>
+        <li>
+            <code><span><</span>p style="color:blue">Tags importantes para formatação do Texto<span><</span>/p></code>
+        </li>
+    </ul>  
+
+    Resultado da tag <code><span><</span>p></code> com o atributo <q>style</q>
+
+    <ul>
+        <li>
+            <p style="color:blue">Tags importantes para formatação do Texto</p>
+        </li>
+    </ul>  
+
+    <small><a href="#top">Voltar</a></small>
+
+    <!-- Atributos específicos -->
+    <h2 id="atributo-especifico">Atributos específicos das Tag</h2>
+    <p>Agora tem também os atributos específicos de cada tag como os da tag <code><span><</span>input></code> e o atributo <q>type</q>. Vejamos alguns exemplos:</p>
+    
+    <ul>
+        <li>
+            Campo do tipo texto: <code><span><</span>input type="text"></code>
+        </li>
+        <li>
+            <strong>Resultado:</strong> Campo do tipo texto: <input type="text">
+        </li>
+    </ul>    
+    <p>Agora de mudarmos o atributo para <q>type=number</q> o campo será exclusivamente para números, assim como ele será um seletor de cores se atribuirmos o valor <q>type=color</q>
+    </p> 
+
+    <ul>
+        <li>
+            Campo do tipo número: <code><span><</span>input type="number"></code>
+        </li>
+        <li>
+            <strong>Resultado:</strong> Campo do tipo número: <input type="number">
+        </li>
+    </ul>
+    <ul>
+        <li>
+            Campo do tipo color: <code><span><</span>input type="color"></code>
+        </li>
+        <li>
+            <strong>Resultado:</strong> Campo do tipo color: <input type="color">
+        </li>        
+    </ul>     
+
+    <small><a href="#top">Voltar</a></small>
+
+    <p><i>by Anderson Lima</i></p>
+</body>
+</html>
