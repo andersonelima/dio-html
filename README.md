@@ -1,2 +1,2 @@
 # dio-html
-Repositório de estudos DIO HTML
+Estudos DIO HTML
